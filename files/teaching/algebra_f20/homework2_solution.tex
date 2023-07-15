@@ -1,0 +1,111 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb,amsthm}
+\usepackage{kpfonts}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\le}{\leqslant}
+
+%Define theorems
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newcounter{punkt}[problem]
+\newcommand{\pp}{\,\noindent\addtocounter{punkt}{1}$\alph{punkt})$\,}
+\newcommand{\ppp}{\,\noindent\addtocounter{punkt}{1}$\alph{punkt}^*$)\,}
+
+\newenvironment{solution}
+{\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution.]}
+	{\end{proof}}
+
+\setlength\parindent{0pt}
+\setlength{\parskip}{5pt}
+
+%define header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Fall 2020}
+\lhead{Yury Ustinovskiy}
+\chead{Algebra MATH-UA.0343-003}
+
+\begin{document}
+
+	\begin{center}
+		\Large{\textbf{Homework 2}}
+	\end{center}
+		
+	
+	\textbf{Due:} Wednesday, September 23
+	
+	{\footnotesize Each problem is worth 10 points. To get the full credit, write complete, detailed solutions. You may use any of the results from the class without a proof, but you have to state them explicitly.}
+	
+	\begin{problem}
+		\pp Given any $a\in\Z_8$ what are possible values of $a^2\in\Z_8$?
+		
+		\pp Prove that equation $x^2-8y^2=5$ does not have solutions in $\Z$.
+	\end{problem}
+	\begin{solution}
+		
+	\end{solution}
+	
+	\begin{problem}
+		Using Euclidean algorithm find $\mathrm{gcd}(36,235)$ and provide a solution in $\Z$ to
+		\[
+		36u+235v=\mathrm{gcd}(36,235).
+		\]
+	\end{problem}
+	\begin{solution}
+		
+	\end{solution}
+	
+	
+	\begin{problem}
+		Solve in $\Z_{235}$ equation
+		\[
+		36\cdot x\equiv 7 \mod 235.
+		\]
+	\end{problem}
+	\begin{solution}
+		
+	\end{solution}
+
+	
+	\begin{problem}
+		\pp Solve equation $x^2=-1$ in $\Z_{13}$.
+		
+		\pp Let $n\in\Z$ be a positive integer. Prove that equation
+		\[
+		xy=0
+		\]
+		for $x,y\in\Z_n$ has nonzero solutions if and only if $n$ is \textbf{not} prime.
+	\end{problem}
+	\begin{solution}
+		
+	\end{solution}
+
+	
+	\begin{problem}
+		Define the least common multiple of two positive integers $a, b \in \Z$ to be the smallest positive integer $m$ such that $a$ and $b$ divide $m$. Denote this integer by $\mathrm{lcm}(a, b)$. Prove that
+		\[
+		\mathrm{gcd}(a,b)\mathrm{lcm}(a,b)=ab.
+		\]
+
+		\footnotesize{Hint: express $\mathrm{gcd}(a,b)$ and $\mathrm{lcm}(a,b)$ in terms of the prime factorizations of $a$ and $b$.}
+	\end{problem}
+	\begin{solution}
+		
+	\end{solution}
+	
+	
+\end{document}

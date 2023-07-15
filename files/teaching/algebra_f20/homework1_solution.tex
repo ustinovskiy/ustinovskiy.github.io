@@ -1,0 +1,102 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb,amsthm}
+\usepackage{kpfonts}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\le}{\leqslant}
+
+%Define theorems
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newcounter{punkt}[problem]
+\newcommand{\pp}{\,\noindent\addtocounter{punkt}{1}$\alph{punkt})$\,}
+\newcommand{\ppp}{\,\noindent\addtocounter{punkt}{1}$\alph{punkt}^*$)\,}
+
+\newenvironment{solution}
+{\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution.]}
+	{\end{proof}}
+
+\setlength\parindent{0pt}
+\setlength{\parskip}{5pt}
+
+%define header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Fall 2020}
+\lhead{Yury Ustinovskiy}
+\chead{Algebra MATH-UA.0343-003}
+
+\begin{document}
+	
+	\begin{center}
+		\Large{\textbf{Homework 1}}
+	\end{center}
+	
+	
+	\textbf{Due:} Wednesday, September 16
+	
+	{\footnotesize Each problem is worth 10 points. To get the full credit, write complete, detailed solutions. You may use any of the results from the class without a proof, but you have to state them explicitly.}
+	
+	\begin{problem} Let $f:\R\to \R$ be the map $f:x\mapsto (x+1)^2$. Compute the inverse image sets $f^{-1}(A)$ of the following sets $A$:
+		
+		\pp $\{-9\}$,
+		
+		\pp $\{-1,0,4\}$,
+		
+		\pp $[0,+\infty) = \{x\in \R:\ x\geq 0\}$.
+	\end{problem}
+	
+	%Copy the \begin{solution}-\end{solution} block below to type your solutions to other problems
+	\begin{solution}
+		Type your solution here
+	\end{solution}
+	
+	
+	\begin{problem}
+		Let $f\colon X\to Y$ be a map, and consider $A_1,A_2\subset X$.
+		
+		\pp Prove that $f(A_1\cup A_2)=f(A_1)\cup f(A_2)$.
+		
+		\pp Prove that $f(A_1\cap A_2)\subset f(A_1)\cap f(A_2)$ and give an example in which equality fails.
+	\end{problem}
+	
+	\begin{problem}
+		Suppose that $S = \{1, 2, 3\}$. Define a map $\pi\colon S \to S$ by
+		\[
+		\begin{split}
+		\pi(1) = 2,\\
+		\pi(2) = 3,\\
+		\pi(3) = 1.
+		\end{split}
+		\]
+		\pp Find the images of elements of $S$ under the maps $(\pi\circ \pi)$ and $(\pi\circ \pi\circ \pi)$.
+		
+		\pp Is $\pi$ surjective? injective?. If it is bijective, find $\pi^{-1}$.
+	\end{problem}
+	
+	\begin{problem}
+		Let $f\colon X\to Y$ and $g\colon Y\to Z$ be maps between sets. Prove that
+		
+		\pp If $g\circ f$ is injective, then $f$ is injective;
+		
+		\pp If $g\circ f$ is surjective then $g$ is surjective.
+	\end{problem}
+	
+	\begin{problem}
+		Let $f \colon A \to B$ and $g \colon B \to C$ be invertible mappings; that is, mappings such that $f^{-1}$ and $g^{-1}$ exist. Show that $(g \circ f)^{-1} = f^{-1}\circ g^{-1}$.
+	\end{problem}
+	
+\end{document}
